@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "tecnologia-morelos-workflow",
-      "source": ".",
+      "source": "./",
       "description": "Workflow de documentación y planeación para proyectos de Tecnología del Estado de Morelos. Publica en tecnologia.morelos.gob.mx y organiza trabajo en Linear.",
       "version": "0.1.0",
       "category": "productivity",
