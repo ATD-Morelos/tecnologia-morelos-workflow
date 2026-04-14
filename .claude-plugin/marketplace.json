@@ -1,0 +1,20 @@
+{
+  "name": "tecnologia-morelos-workflow",
+  "owner": {
+    "name": "ATDEM",
+    "email": "tecnologia@morelos.gob.mx"
+  },
+  "metadata": {
+    "description": "Plugin de documentación y planeación para proyectos de Tecnología del Estado de Morelos"
+  },
+  "plugins": [
+    {
+      "name": "tecnologia-morelos-workflow",
+      "source": ".",
+      "description": "Workflow de documentación y planeación para proyectos de Tecnología del Estado de Morelos. Publica en tecnologia.morelos.gob.mx y organiza trabajo en Linear.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "keywords": ["morelos", "gobierno", "documentacion", "linear", "workflow", "arc42", "planning"]
+    }
+  ]
+}
