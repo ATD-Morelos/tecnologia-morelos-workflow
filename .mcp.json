@@ -1,15 +1,15 @@
 {
   "mcpServers": {
     "tecnologia-morelos": {
-      "type": "url",
+      "type": "http",
       "url": "https://mcp-tecnologia.morelos.gob.mx/mcp"
     },
     "linear": {
-      "type": "url",
+      "type": "http",
       "url": "https://mcp.linear.app/mcp"
     },
     "excalidraw": {
-      "type": "url",
+      "type": "http",
       "url": "https://mcp.excalidraw.com/mcp"
     }
   }
