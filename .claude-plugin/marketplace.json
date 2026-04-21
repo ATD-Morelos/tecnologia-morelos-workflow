@@ -5,14 +5,15 @@
     "email": "tecnologia@morelos.gob.mx"
   },
   "metadata": {
-    "description": "Plugin de documentación y planeación para proyectos de Tecnología del Estado de Morelos"
+    "description": "Plugin de documentación y planeación para proyectos de Tecnología del Estado de Morelos",
+    "version": "0.1.2"
   },
   "plugins": [
     {
       "name": "tecnologia-morelos-workflow",
       "source": "./",
       "description": "Workflow de documentación y planeación para proyectos de Tecnología del Estado de Morelos. Publica en tecnologia.morelos.gob.mx y organiza trabajo en Linear.",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "category": "productivity",
       "keywords": ["morelos", "gobierno", "documentacion", "linear", "workflow", "arc42", "planning"]
     }
