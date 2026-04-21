@@ -91,7 +91,8 @@ see [kb-structure.md](kb-structure.md).
 | Record a decision | adr |
 | Check project status | kb-read |
 | Review a document | review |
-| Publish to TM | kb-publish |
+| Redactar / revisar comunicación ciudadana | voice |
+| Publish to TM | voice → kb-publish |
 
 ## MCP servers
 

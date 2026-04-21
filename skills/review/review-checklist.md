@@ -39,6 +39,17 @@ Adaptar las preguntas al tipo de documento específico.
 - [ ] ¿Los objetivos son SMART (si aplica)?
 - [ ] ¿Los entregables son medibles y verificables?
 
+## 3b. Voz y tono (sólo documentos ciudadanos)
+
+Si el documento va dirigido a ciudadanía, aplica además la checklist completa
+del skill [`voice`](../voice/checklist.md). Resumen:
+
+- [ ] Tutea de principio a fin (Cercana).
+- [ ] Cada compromiso tiene fecha absoluta (Confiable).
+- [ ] No contiene burocratismos del catálogo `voice/patrones.md` (Clara).
+- [ ] Toda sigla está glosada en su primera mención (Clara).
+- [ ] Cada enlace indica a dónde lleva (Confiable).
+
 ## 4. Diligence — ¿Se documentó la trazabilidad?
 
 - [ ] ¿El footer de AI transparency está presente?

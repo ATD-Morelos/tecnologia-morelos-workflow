@@ -17,15 +17,20 @@ allowed-tools: mcp__tecnologia-morelos__create_knowledge_base mcp__tecnologia-mo
 
 ## Critical rules
 
-1. **Always read before writing** — Use `get_knowledge_node` to read current
+1. **Pasa por `voice` antes de publicar** — Si el documento está dirigido a
+   ciudadanía (comunicados, notificaciones, FAQs, páginas públicas), aplícale
+   el skill `voice` antes de llamar a TM. No publiques texto con burocratismos
+   o fechas ambiguas.
+
+2. **Always read before writing** — Use `get_knowledge_node` to read current
    content before updating. Never overwrite blindly.
 
-2. **Use `id` for updates, `nodeId` for reads**:
+3. **Use `id` for updates, `nodeId` for reads**:
    - `get_knowledge_node({ nodeId: "..." })` ← reading
    - `update_knowledge_node({ id: "..." })` ← writing
    - `move_knowledge_node({ id: "..." })` ← moving
 
-3. **AI transparency footer** — Every published document must end with:
+4. **AI transparency footer** — Every published document must end with:
    ```
    ---
    Generado con AI (tecnologia-morelos-workflow v0.1.0), revisado por [nombre]
