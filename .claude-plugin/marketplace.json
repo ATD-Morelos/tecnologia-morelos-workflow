@@ -12,7 +12,7 @@
       "name": "tecnologia-morelos-workflow",
       "source": "./",
       "description": "Workflow de documentación y planeación para proyectos de Tecnología del Estado de Morelos. Publica en tecnologia.morelos.gob.mx y organiza trabajo en Linear.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "productivity",
       "keywords": ["morelos", "gobierno", "documentacion", "linear", "workflow", "arc42", "planning"]
     }
