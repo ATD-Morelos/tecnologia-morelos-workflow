@@ -189,6 +189,36 @@ This BREAKS the renderer. Always keep Mermaid at the top level.
 
 ---
 
+### YouTube
+
+Embed de un video de YouTube. Tag **self-closing**. Debe ir al **top level** —
+fuera de cualquier otro Markdoc component.
+
+**Atributos:**
+
+| Atributo | Tipo | Requerido | Descripción |
+|----------|------|-----------|-------------|
+| `id` | string | sí | ID del video (parte después de `v=` o de `youtu.be/`) |
+| `title` | string | no | Título mostrado encima del player |
+
+**Correcto:**
+```markdoc
+{% youtube id="YmQ7jRgf4f0" /%}
+
+{% youtube id="YmQ7jRgf4f0" title="Claude FM" /%}
+```
+
+**INCORRECTO — dentro de accordion/step/card:**
+```markdoc
+{% accordion title="Demo del producto" %}
+{% youtube id="YmQ7jRgf4f0" /%}
+{% /accordion %}
+```
+Como con mermaid y code blocks, los embeds van fuera. Mover el `{% youtube %}`
+al top level y dejar el accordion solo con texto.
+
+---
+
 ## Supported Standard Markdown
 
 TM renders these standard Markdown elements natively:
@@ -235,6 +265,7 @@ browser after publishing codegroup content.
 | `{% card %}` | NO | NO | YES |
 | `{% cardgroup %}` | NO | NO | Only via cards |
 | `{% codegroup %}` | **YES** | NO | NO |
+| `{% youtube %}` | n/a (self-closing) | n/a | n/a |
 | Top level | YES | **YES** | YES |
 
 ## Common Patterns
@@ -286,4 +317,18 @@ Archivo de configuración:
 API_KEY=your_key_here
 API_URL=https://api.morelos.gob.mx
 ```
+```
+
+### Doc con texto + video explicativo
+
+```markdoc
+## ¿Cómo funciona el trámite?
+
+Lee primero el flujo en texto, luego mira el recorrido en video.
+
+{% youtube id="YmQ7jRgf4f0" title="Demo paso a paso" /%}
+
+{% accordion title="¿Necesitas ayuda?" %}
+Contacta a la Dirección de Atención Ciudadana al teléfono 777-XXX-XXXX.
+{% /accordion %}
 ```
